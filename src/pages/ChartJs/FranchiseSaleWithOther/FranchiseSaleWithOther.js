@@ -53,39 +53,7 @@ export default function FranchiseSaleWithOther() {
     }
 
 
-    function Test(FromDate, Todate) {
-        // alert(`http://web1.chitalebandhu.in:8080/ChartjsAPI/api/SaleChart/GetChartHoriData?FromDate=${FromDate}&ToDate=${Todate}`)
-
-        var config = {
-            
-            url: `http://web1.chitalebandhu.in:8080/ChartjsAPI/api/SaleChart/GetChartHoriDatawithOther?FromDate=${FromDate}&ToDate=${Todate}`,
-            method: 'GET',
-      
-      headers: {
-        "Access-Control-Allow-Origin": "http://web.chitalebandhu.in",
-        "Access-Control-Allow-Methods": "DELETE, POST, GET, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
-        'Content-Type': 'application/json',
-      },
-      withCredentials: true,
-      credentials: 'same-origin',
-        };
-      debugger
-        axios(config)
-            .then(function (response) {
-                debugger
-                console.log("Axios Cross response",response)
-                if (response.data.StatusCode === 200) {
-
-                   
-                } else {
-                    alert("Data Not Found")
-                }
-            })
-            .catch(function (error) {
-                console.log("Axios Cross error",JSON.parse(JSON.stringify(error)))
-            });
-    }
+    
     const [ChartState, setChartState] = useState(true);
     const [SelectDateDropdownState, setSelectDateDropdownState] = useState('Today');
 
@@ -96,9 +64,7 @@ export default function FranchiseSaleWithOther() {
     // Intitialization  Date = (select to-date) And (from_date_input) .....return => Todate and FromDate in string format 
 
     useEffect(() => {
-        // AxiosApiCallFunction(GetCurrentDate(), GetCurrentDate());
-       
-        Test(GetCurrentDate(), GetCurrentDate());
+        AxiosApiCallFunction(GetCurrentDate(), GetCurrentDate());
         // dispatch(GetFranchiseSellData("test/url"));
     }, [])
 
