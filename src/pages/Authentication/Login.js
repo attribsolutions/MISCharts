@@ -75,7 +75,7 @@ const Login = props => {
   return (
     <React.Fragment>
       <MetaTags>
-        <title>Login</title>
+      <title>Franchise sale Chart| Login</title>
       </MetaTags>
       <div className="auth-page  text-white"  style={{backgroundColor:"gray"}}>
         <Container fluid className="p-0">

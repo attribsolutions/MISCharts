@@ -13,7 +13,7 @@ const Dashboard = () => {
         <React.Fragment>
             <div className="page-content">
                 <MetaTags>
-                    <title>Dashboard | Minia - React Admin & Dashboard Template</title>
+                <title>Franchise sale Chart| FoodERP-React FrontEnd</title>
                 </MetaTags>
                 <Container fluid>
                     {/* Render Breadcrumbs */}

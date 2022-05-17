@@ -42,7 +42,7 @@ const Layout = (props) => {
     let currentage = title.charAt(1).toUpperCase() + title.slice(2);
 
     document.title =
-      currentage + " | Minia - React Admin & Dashboard Template";
+      currentage + " |Franchise sale Chart ";
   }, [props.location.pathname]);
 
   useEffect(() => {
