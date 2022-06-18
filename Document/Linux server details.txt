@@ -1,7 +1,7 @@
 As per our discussion, below are ranje VPN access and Linux server details.
 
 VPN IP : 103.163.90.106
-user name : attib
+user name : attrib
 password : AttriB%r123#
 VPN configuration access: https://103.163.90.106:4443/userportal/webpages/myaccount/login.jsp
 
@@ -15,4 +15,7 @@ password: Cent@123$#
 
 Server start Commands 
 
-start server :   pm2 server build 3001 -spa
+start server :  $ pm2 server build 3001 -spa
+
+To reboot Linux using the command line: $ sudo reboot
+
